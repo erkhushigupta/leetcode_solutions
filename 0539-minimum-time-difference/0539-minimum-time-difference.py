@@ -1,5 +1,5 @@
 class Solution:
-  def findMinDifference(self, timePoints: List[str]) -> int:
+  def findMinDifference(self, timePoints: list[str]) -> int:
     ans = 24 * 60
     nums = sorted([int(timePoint[:2]) * 60 + int(timePoint[3:])
                    for timePoint in timePoints])
